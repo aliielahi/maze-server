@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.628e8e47.chunk.css",
+    "main.js": "/static/js/main.debe6a4f.chunk.js",
+    "main.js.map": "/static/js/main.debe6a4f.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/css/2.9c78701f.chunk.css": "/static/css/2.9c78701f.chunk.css",
+    "static/js/2.bf3dbd59.chunk.js": "/static/js/2.bf3dbd59.chunk.js",
+    "static/js/2.bf3dbd59.chunk.js.map": "/static/js/2.bf3dbd59.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.4291b6430fcdf36d0798b2c466003de0.js": "/precache-manifest.4291b6430fcdf36d0798b2c466003de0.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.9c78701f.chunk.css.map": "/static/css/2.9c78701f.chunk.css.map",
+    "static/css/main.628e8e47.chunk.css.map": "/static/css/main.628e8e47.chunk.css.map",
+    "static/media/App.css": "/static/media/q.830d9a86.jpg",
+    "static/media/roanoicon.jpg": "/static/media/roanoicon.9a92b331.jpg"
+  }
+}
