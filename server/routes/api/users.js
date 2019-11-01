@@ -198,12 +198,12 @@ router.post('/answerQuestion', passport.authenticate('jwt', { session: false }),
 		}
 	})
 })
-
+const hashvalues = [529, 12167, 279841, 6436343, 8035791, 4823067, 930464, 1400658,  2215113,  947564,  1793958,  1261006,  9003124,  7071712,  2649264,  933030,  1459676,  3572527,  2168065,  9865467,  6905587,  8828396,  3052968,  218215,  5018945]
 router.get('/checkQRCode/:QRCodeId', passport.authenticate('jwt', { session: false }), (req, res) => {
 	const errors = {}
 	Group.findById(req.user.groupID)
 	.then( group => {
-		if(group.currentQRCode !== null && req.params.QRCodeId == Math.pow(23,group.currentQRCode)%10000007) {
+		if(group.currentQRCode !== null && req.params.QRCodeId == hashvalues[parseInt(group.currentQRCode)-2]) {
 			Question.findOne({questionNumber: (parseInt(group.answerdQuestions.length)+1)})
 			.then(q => {
 				group.QRCodes.push(group.currentQRCode);
@@ -223,7 +223,7 @@ router.get('/getCurrentQRCode', passport.authenticate('jwt', { session: false })
 	const errors = {}
 	Group.findById(req.user.groupID)
 	.then(group => {
-		res.download(path.resolve('qrcodes', `${group.currentQRCode}.jpg`));
+		res.download(path.resolve('qrcodes', /*`${group.currentQRCode}.jpg`*/ '2.jpg'));
 	})
 })
 
